@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jan Akerman",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack ./entry.js bundle.js --module-bind 'css=style!css'"
+  }
 }
